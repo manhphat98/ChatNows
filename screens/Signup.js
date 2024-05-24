@@ -3,6 +3,7 @@ import { StyleSheet, Text, View, Button, TextInput, Image, SafeAreaView, Touchab
 import { createUserWithEmailAndPassword } from 'firebase/auth';
 import { auth } from '../config/firebase';
 const backImage = require("../assets/backImage.png");
+const iconImage = require("../assets/logo.png");
 
 export default function Signup({ navigation }) {
 
@@ -27,6 +28,7 @@ export default function Signup({ navigation }) {
       <Image source={backImage} style={styles.backImage} />
       <View style={styles.whiteSheet} />
       <SafeAreaView style={styles.form}>
+      <Image source={iconImage} style={styles.logo} />
         <Text style={styles.title}>ĐĂNG KÝ</Text>
         <TextInput
           style={styles.input}
@@ -120,5 +122,11 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     marginTop: 40,
+  },
+  logo: {
+    width: 100,
+    height: 100,
+    alignSelf: "center",
+    marginBottom: 20,
   },
 });

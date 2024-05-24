@@ -140,9 +140,9 @@ const styles = StyleSheet.create({
     marginTop: 40,
   },
   logo: {
-    width: 100, // Đặt chiều rộng tùy ý
-    height: 100, // Đặt chiều cao tùy ý
-    alignSelf: "center", // Đặt logo ở giữa theo chiều ngang
-    marginBottom: 20, // Khoảng cách bên dưới logo
+    width: 100,
+    height: 100,
+    alignSelf: "center",
+    marginBottom: 20,
   },
 });
